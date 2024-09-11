@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+    padding: 10px;
+
+}
+
+.todo-app {
+    background-color: #fff;
+    width: 100%;
+    max-width: 546px;
+    border-radius: 10px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+
+}
+
+.todo-app h2 {
+    display: flex;
+    align-items: center;
+    color: #65379B;
+    margin-bottom: 20px;
+}
+
+.todo-app img {
+    width: 34px;
+    height: auto;
+    margin-left: 10px;
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: aliceblue;
+    margin-bottom: 25px;
+
+
+}
+
+.row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background: transparent;
+    
+}
+.row button{
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 16px 50px;
+    background: #65379B;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+ul li{
+    list-style: none;;
+    cursor: pointer;
+    user-select: none;
+    padding: 12px 8px 12px 50px;
+    font-size: 17px;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url(Icon/checkbox-blank-circle-line.svg);
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left: 8px;    
+}
+
+ul li.checked{
+    color:#65379B;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(Icon/checkbox-circle-fill.svg);
+}
+
+ul li span{
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  
+  top: 5px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 40px;
+
+}
+
+ul li span:hover{
+    background-color: #d2d2d2;
+    color: white;
+    
+}
